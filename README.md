@@ -1,7 +1,5 @@
 Rare Variant Analysis Pipeline:  Step-By-Step
 Version 03.23.2023
-<img width="468" height="73" alt="image" src="https://github.com/user-attachments/assets/32861959-fa57-4e59-9e51-0ca28f395d98" />
-
 
 Aim: to identify genes associated with case disorder using exome-wide gene-based burden testing, in which the aggregate frequency of rare protein-altering variants in each gene in the exome is tested against a set of suitable controls. 
 
