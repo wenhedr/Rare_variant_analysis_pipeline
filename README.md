@@ -1,19 +1,21 @@
 Rare Variant Analysis Pipeline
 Version 03.23.2023
 
-This repository contains a step-by-step pipeline for rare variant burden analysis using exome sequencing data, including variant calling, annotation, harmonization, quality control, and gene-based burden testing. The workflow was developed for rare disease and consortium-based genetic studies where datasets may originate from different sequencing platforms, cohorts, or analysis pipelines.
+This repository contains a step-by-step workflow for rare variant burden analysis using exome sequencing data. The pipeline includes joint variant calling, VEP annotation, quality control, coverage harmonization, variant filtering, carrier counting, and gene-based burden testing.
 
-The pipeline emphasizes harmonization across heterogeneous datasets by applying standardized QC filters, annotation strategies, and burden testing procedures. It includes scripts for:
+The workflow is designed to support harmonized analysis across datasets generated from different sequencing platforms and cohorts. Quality control steps include coverage assessment, PASS filtering, allele balance filtering, allele frequency filtering, and calibration using synonymous variants to evaluate potential technical artifacts and case-control harmonization.
 
-* joint variant calling
-* VEP annotation
-* coverage harmonization
-* allele balance and frequency filtering
-* synonymous variant calibration
-* rare variant burden testing
-* QQ plot generation
-* gene-level carrier counting
+The pipeline supports both individual-level control data and gnomAD summary statistics and includes scripts for generating SNP lists, estimating carrier frequencies, performing burden testing, and generating QQ plots for quality assessment.
 
-Each folder/repository can function like a shared project workspace where collaborators document exactly what was done, what filters were applied, and how variants were interpreted, making downstream comparison and harmonization much easier.
+Methods included:
 
-Details in Readme.MD
+* Joint variant calling (GATK)
+* VEP functional annotation
+* Coverage harmonization
+* Variant-level QC filtering
+* Rare variant filtering by population frequency
+* Gene-level carrier counting
+* Rare variant burden testing
+* QQ plot evaluation for calibration and harmonization
+
+The repository is intended for reproducible and collaborative rare disease and consortium-based genetic analyses.
